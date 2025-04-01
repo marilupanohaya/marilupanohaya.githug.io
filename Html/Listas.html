@@ -1,0 +1,210 @@
+<html> 
+      <head>  
+        <link rel="stylesheet" href="estilos.css">
+        <title>Listas en HTML</title>
+    </head>
+
+    <body>
+    
+    <header>
+         <h1>Listas en HTML</h1>
+    </header>
+   
+
+   <nav>
+            <div id="navegador">
+                <button> <a href="Index.html"> Inicio </a> </button> 
+                <button> <a href="Listas.html"> Listas </a> </button>
+                <button> <a href="Enlaces.html"> Enlaces </a> </button>
+                <button> <a href="Tablas.html">Tablas </a> </button>
+                <button> <a href="Imagenes.html">Imagenes</a> </button>
+                <button> <a href="Audio.html">Audio</a> </button>
+                <button> <a href="Videos.html">Video</a> </button>
+                <button> <a href="Formulario.html">Formulario </a></button>
+            </div>
+    </nav>
+    --> 
+    <head> 
+        <title>Listas HTML</title> 
+        <style> 
+            * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        } 
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color:antiquewhite; 
+        } 
+        header, nav, main, footer { 
+            width: 1200px; 
+            margin: 20px auto; 
+        } 
+        header { 
+            background-color: cadetblue; 
+            color: aliceblue; 
+            padding: 20px; 
+            text-align: center; 
+        } 
+        nav { 
+            width: 100%; 
+            height: 80px; 
+            background-color: #c1ebdb; 
+            margin-bottom: 20px; 
+        } 
+        main { 
+            background-color: #fef7ed; 
+            padding: 30px; 
+            border-radius: 10px; 
+        } 
+        section { 
+            background-color: cadetblue; 
+            color: white; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+            border-radius: 8px; 
+        } 
+        footer { 
+            background-color: cadetblue; 
+            color: aliceblue; 
+            text-align: center; 
+            padding: 10px; 
+            font-size: 14px; 
+            border-radius: 8px;
+               } 
+        ul, ol { 
+            margin-left: 20px; 
+        } 
+        dl dt { 
+            font-weight: bold; 
+        } 
+            } 
+            nav ul{ 
+            } 
+                text-align: center; 
+                padding: 0; 
+            nav ul li{ 
+                width: 150px; 
+                height: 25px; 
+                background-color:#776d3c; 
+                margin: 0 80px;  
+                list-style-type: none; 
+                display: inline-block; 
+                padding: 25px; 
+                text-align: center; 
+                color: white; 
+                justify-content: center; 
+                align-items: center; 
+                border-radius: 5px; 
+                font-weight: bold; 
+            } 
+    </style> 
+</head> 
+<body> 
+
+    <main> 
+        <section> 
+            <h2>Lista desordenada</h2> 
+            <p>Lorem Ipsum es simplemente texto de relleno de la 
+industria de impresión y composición tipográfica.</p> 
+            <ul> 
+                <li>Argentina</li> 
+                <li>Colombia</li>
+                   <li>España</li> 
+                <li>Francia</li> 
+                <li>Lituania</li> 
+                <li>México</li> 
+                <li>Rusia</li> 
+                <li>Italia</li> 
+                <li>Canadá</li> 
+                <li>Estados Unidos</li> 
+            </ul> 
+        </section> 
+ 
+        <section> 
+            <h2>Lista ordenada</h2> 
+            <p>Suspendisse pretium, augue ut rhoncus fermentum, 
+magna augue pellentesque arcu.</p> 
+            <ol> 
+                <li>Aguascalientes</li> 
+                <li>Puebla</li> 
+                <li>Guanajuato</li> 
+                <li>Veracruz</li> 
+                <li>Jalisco</li> 
+                <li>Yucatán</li> 
+                <li>Oaxaca</li> 
+                <li>Guerrero</li> 
+                <li>Baja California</li> 
+                <li>Michoacán</li> 
+            </ol> 
+        </section> 
+ 
+        <section> 
+            <h2>Lista mixta</h2> 
+            <p>Integer porta libero non nulla semper consequat.</
+ p> 
+            <ol> 
+                <li>Acajete</li> 
+                <li>Atlixco 
+                    <ul> 
+                        <li>Ahuehuetes</li> 
+                        <li>Alta Vista</li> 
+                        <li>Benito Juárez</li> 
+                        <li>El Carmen</li> 
+                        <li>El Pedregal</li> 
+                        <li>Insurgentes</li> 
+                    </ul> 
+                </li> 
+                <li>Izúcar de Matamoros</li> 
+                <li>Cholula 
+                    <ul> 
+                        <li>Santa Ma. Xixitla</li> 
+                        <li>Santiago Mixcuitla</li> 
+                        <li>Cholula de Rivadavia</li>
+                         <li>Jesús Tlatempa</li> 
+                        <li>Infonavit Santiago</li> 
+                        <li>Santiago Momoxpan</li> 
+                    </ul> 
+                </li> 
+                <li>Chignahuapan</li> 
+                <li>Zacatlán</li> 
+                <li>Puebla 
+                    <ul> 
+                        <li>San Manuel</li> 
+                        <li>Universidades</li> 
+                        <li>Amalucan</li> 
+                        <li>San Ramón</li> 
+                        <li>San Baltazar Campeche</li> 
+                        <li>Granjas de San Isidro</li> 
+                    </ul> 
+                </li> 
+                <li>Cuautlancingo</li> 
+                <li>Tepeji</li> 
+                <li>Huachinando</li> 
+            </ol> 
+        </section> 
+        <section> 
+            <h2>Lista de definición</h2> 
+            <p>Integer porta libero non nulla semper consequat.</
+ p> 
+            <dl> 
+                <dt>País</dt> 
+                <dd>It was popularised in the 1960s with the 
+release of Letraset sheets containing Lorem Ipsum passages.</dd> 
+                <dt>Estado</dt> 
+                <dd>Lorem Ipsum is simply dummy text of the 
+printing and typesetting industry.</dd> 
+                <dt>Municipio</dt> 
+                <dd>Ipsum is simply dummy text of the printing 
+and typesetting industry.</dd> 
+                <dt>Colonia</dt> 
+                <dd>It has survived not only five centuries, 
+but also the leap into electronic typesetting.</dd> 
+            </dl> 
+        </section> 
+    </main> 
+    <footer> 
+        <h6>Elaborado por Marilú Panohaya Hernández</h6> 
+    </footer> 
+</body> 
+</html>

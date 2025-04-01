@@ -1,0 +1,160 @@
+<html>
+    <head>  
+        <link rel="stylesheet" href="estilos.css">
+        <title>Video en HTML</title>
+    </head>
+
+    <body>
+    
+    <header>
+         <h1>Video en HTML</h1>
+    </header>
+   
+    <style> 
+            * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        } 
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color:antiquewhite; 
+        } 
+        header, nav, main, footer { 
+            width: 1200px; 
+            margin: 20px auto; 
+        } 
+        header { 
+            background-color: cadetblue; 
+            color: aliceblue; 
+            padding: 20px; 
+            text-align: center; 
+        } 
+        nav { 
+            width: 100%; 
+            height: 100px; 
+            background-color: #c1ebdb; 
+            margin-bottom: 20px; 
+        } 
+        main { 
+            background-color: #fef7ed; 
+            padding: 30px; 
+            border-radius: 10px; 
+        } 
+        section { 
+            background-color: cadetblue; 
+            color: white; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+            border-radius: 8px; 
+        } 
+        footer { 
+            background-color: cadetblue; 
+            color: aliceblue; 
+            text-align: center; 
+            padding: 10px; 
+            font-size: 14px; 
+            border-radius: 8px;
+               } 
+        ul, ol { 
+            margin-left: 20px; 
+        } 
+        dl dt { 
+            font-weight: bold; 
+        } 
+            } 
+            nav ul{ 
+            } 
+                text-align: center; 
+                padding: 0; 
+            nav ul li{ 
+                width: 250px; 
+                height: 75px; 
+                background-color:#776d3c; 
+                margin: 0 80px;  
+                list-style-type: none; 
+                display: inline-block; 
+                padding: 25px; 
+                text-align: center; 
+                color: white; 
+                justify-content: center; 
+                align-items: center; 
+                border-radius: 5px; 
+                font-weight: bold; 
+            } 
+    </style> 
+     <nav>
+            <div id="navegador">
+                <button> <a href="Index.html"> Inicio </a> </button> 
+                <button> <a href="Listas.html"> Listas </a> </button>
+                <button> <a href="Enlaces.html"> Enlaces </a> </button>
+                <button> <a href="Tablas.html">Tablas </a> </button>
+                <button> <a href="Imagenes.html">Imagenes</a> </button>
+                <button> <a href="Audio.html">Audio</a> </button>
+                <button> <a href="Videos.html">Video</a> </button>
+                <button> <a href="Formulario.html">Formulario </a></button>
+            </div>
+    </nav>
+    
+   
+    <main>
+   
+        
+           <section class="SecAud">
+            <h2>Video 1</h2>
+            <br>
+            <p>Los videos en HTML se integran en páginas web mediante la etiqueta "video", que permite insertar archivos de video de manera sencilla y accesible. Esta etiqueta soporta varios formatos como MP4, WebM y Ogg, y ofrece opciones para agregar controles de reproducción, como botones de play, pausa, control de volumen y avance. Además, es posible personalizar el tamaño del video mediante atributos como width y height, o hacer que se reproduzca automáticamente o en bucle usando autoplay y loop. Si el navegador no soporta videos, se puede incluir un mensaje alternativo dentro de la etiqueta para informar al usuario.</p> <br>
+             <video controls autoplay muted width="380" height="315"> 
+        <source src= "video/video%201.mp4" type="video/mp4" >
+        </video>
+            </section>
+            
+
+            <section class="SecAud">
+            <h2>Video 2</h2>
+            <br>
+            <p>Una de las ventajas de usar la etiqueta "video" en HTML es la capacidad de personalizar la presentación del video. A través de atributos como width y height, es posible ajustar el tamaño del video para que se adapte de manera óptima al diseño de la página. También se puede configurar para que el video comience automáticamente utilizando el atributo autoplay o para que se reproduzca en bucle con el atributo loop. Estos controles permiten que el video se integre de manera fluida y funcional en el contenido web.
+            </p> <br>
+            <video controls poster="recursos/images/poster.jpg" width="380" height="315">
+        <source src= "video/video%202.mp4" type="video/mp4">
+            El navegador no soporta tu video
+            </section>
+
+        <section class="SecAud">
+        <h2>Video 3</h2>
+        <br>
+            <p>Para optimizar la accesibilidad, los videos en HTML pueden incluir subtítulos y descripciones de audio, lo que facilita la comprensión para personas con discapacidades auditivas o visuales. Esto se logra con la etiqueta <track>, que permite agregar subtítulos en diferentes idiomas o descripciones adicionales. Asimismo, la compatibilidad con formatos de alta calidad asegura una experiencia fluida, sin comprometer el rendimiento del sitio web, logrando que los videos sean una herramienta poderosa de comunicación en cualquier entorno digital.</p> <br>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/gdx7gN1UyX0?si=GfXdVPCP_EZtvjem" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+        
+        
+        <section class="SecAud">
+        <h2>Video 4</h2>
+        <br>
+            <p> La etiqueta "video" también ofrece una experiencia interactiva al usuario al incluir el atributo controls, que habilita botones como play, pause, volumen y pantalla completa. Este enfoque intuitivo mejora la accesibilidad y usabilidad del video, permitiendo que el espectador controle su reproducción según sus preferencias. Además, si el navegador no admite la reproducción de videos, es posible incluir un mensaje alternativo dentro de la etiqueta, lo que garantiza que el usuario siempre reciba algún tipo de información.
+</p>
+            <br>
+            <h3>Enlace:</h3>
+           <a href="https://cdn.pixabay.com/video/2015/11/02/1236-144355017_large.mp4" id="vidEnl"> <br>
+           Vídeo de mundo digital by pixabay</a>
+        </section>
+
+        
+        
+
+    </main>
+    
+   
+    <footer>
+            <h5>Elaborado por Marilú Panohaya Hernández </h5>
+    </footer>
+    
+    </body>
+</html><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+    </head>
+    <body></body>
+</html>

@@ -1,0 +1,444 @@
+<html>
+    <head>  
+        <link rel="stylesheet" href="estilos.css">
+        <title>Tablas en HTML</title>
+
+<style type="text/css">
+    
+
+
+    table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  color: black;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #f32eab;
+  color: white;
+}
+
+td:hover{
+    text-align: left;
+    background-color: 357281;
+  padding: 8px;
+  color: white;
+}
+
+
+</style>
+
+    </head>
+
+    <body>
+    
+    <header>
+         <h1>Tablas en HTML</h1>
+    </header>
+   
+
+    <nav>
+            <div id="navegador">
+                <button> <a href="Index.html"> Inicio </a> </button> 
+                <button> <a href="Listas.html"> Listas </a> </button>
+                <button> <a href="Enlaces.html"> Enlaces </a> </button>
+                <button> <a href="Tablas.html">Tablas </a> </button>
+                <button> <a href="Imagenes.html">Imagenes</a> </button>
+                <button> <a href="Audio.html">Audio</a> </button>
+                <button> <a href="Videos.html">Video</a> </button>
+                <button> <a href="Formulario.html">Formulario </a></button>
+            </div>
+    </nav>
+      <style> 
+            * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        } 
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color:antiquewhite; 
+        } 
+        header, nav, main, footer { 
+            width: 1200px; 
+            margin: 20px auto; 
+        } 
+        header { 
+            background-color: cadetblue; 
+            color: aliceblue; 
+            padding: 20px; 
+            text-align: center; 
+        } 
+        nav { 
+            width: 100%; 
+            height: 80px; 
+            background-color: #c1ebdb; 
+            margin-bottom: 20px; 
+        } 
+        main { 
+            background-color: #fef7ed; 
+            padding: 30px; 
+            border-radius: 10px; 
+        } 
+        section { 
+            background-color: cadetblue; 
+            color: white; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+            border-radius: 8px; 
+        } 
+        footer { 
+            background-color: cadetblue; 
+            color: aliceblue; 
+            text-align: center; 
+            padding: 10px; 
+            font-size: 14px; 
+            border-radius: 8px;
+               } 
+        ul, ol { 
+            margin-left: 20px; 
+        } 
+        dl dt { 
+            font-weight: bold; 
+        } 
+            } 
+            nav ul{ 
+            } 
+                text-align: center; 
+                padding: 0; 
+            nav ul li{ 
+                width: 150px; 
+                height: 25px; 
+                background-color:#776d3c; 
+                margin: 0 80px;  
+                list-style-type: none; 
+                display: inline-block; 
+                padding: 25px; 
+                text-align: center; 
+                color: white; 
+                justify-content: center; 
+                align-items: center; 
+                border-radius: 5px; 
+                font-weight: bold; 
+            } 
+    </style> 
+   
+    <main> 
+     <style> 
+            * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        } 
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color:antiquewhite; 
+        } 
+        header, nav, main, footer { 
+            width: 1200px; 
+            margin: 20px auto; 
+        } 
+        header { 
+            background-color: cadetblue; 
+            color: aliceblue; 
+            padding: 20px; 
+            text-align: center; 
+        } 
+        nav { 
+            width: 100%; 
+            height: 80px; 
+            background-color: #c1ebdb; 
+            margin-bottom: 20px; 
+        } 
+        main { 
+            background-color: #fef7ed; 
+            padding: 30px; 
+            border-radius: 10px; 
+        } 
+        section { 
+            background-color: cadetblue; 
+            color: white; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+            border-radius: 8px; 
+        } 
+        footer { 
+            background-color: cadetblue; 
+            color: aliceblue; 
+            text-align: center; 
+            padding: 10px; 
+            font-size: 14px; 
+            border-radius: 8px;
+               } 
+        ul, ol { 
+            margin-left: 20px; 
+        } 
+        dl dt { 
+            font-weight: bold; 
+        } 
+            } 
+            nav ul{ 
+            } 
+                text-align: center; 
+                padding: 0; 
+            nav ul li{ 
+                width: 150px; 
+                height: 25px; 
+                background-color:#776d3c; 
+                margin: 0 80px;  
+                list-style-type: none; 
+                display: inline-block; 
+                padding: 25px; 
+                text-align: center; 
+                color: white; 
+                justify-content: center; 
+                align-items: center; 
+                border-radius: 5px; 
+                font-weight: bold; 
+            } 
+    </style> 
+        <section>
+ <h2> Tabla simple</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit. Morbi vel diam ac tellus accumsan interdum non vitae ex. Sed bibendum 
+quam sit amet nisl sollicitudin lobortis. Morbi malesuada lacus a arcu 
+tempor, eget elementum mauris tristique. Sed fermentum nisl et orci porttitor 
+vestibulum.</p> 
+                    <table id="tabla_1"> 
+                      <thead> 
+                         <tr> 
+                           <th>Nombre</th> 
+                           <th>Apellido paterno</th> 
+                           <th>Apellido materno</th> 
+                           <th>Direcciòn</th> 
+                           <th>Telefono</th> 
+                           <th>Email</th> 
+                       </tr> 
+                        </thead> 
+                            <tbody> 
+                            <tr> 
+                          <td>Fernanda</td> 
+                          <td>Morales</td> 
+                          <td>Lopez</td> 
+                          <td>Granados #25 colonia Rincon Arboledas</td> 
+                          <td>2224738714</td> 
+                          <td>mariafernanda23@gmail.com</td> 
+                                </tr> 
+                                <tr> 
+                                    <td>Juan Carlos</td> 
+                                    <td>Salazar</td> 
+                                    <td>Camacho</td> 
+                                    <td>Villa Florencio #2345 Col Santiago</
+ td> 
+                                    <td>2225874859</td> 
+                                    <td>juanitocamacho@hotmail.com</td> 
+                                </tr> 
+                                 <tr> 
+                                    <td>Karla</td> 
+                                    <td>Benites</td> 
+                                    <td>Hernandez</td> 
+                                    <td>Calle Rosas #456 Col. Las animas</td> 
+                                    <td>222689458</td> 
+                                    <td>karlabenites.@gmail.com</td> 
+                                </tr> <tr> 
+                                    <td>David Miguel</td> 
+                                    <td>Leon</td> 
+                                    <td>Ramos</td> 
+                                    <td>14 sur #467 San Jose Mayorazgo</td> 
+                                    <td>222697458</td> 
+                                    <td>dleon@hotmail.com</td> 
+                                </tr> <tr> 
+                                    <td>Nicoloas</td> 
+                                    <td>Vazquez</td> 
+                                    <td>Prados</td> 
+                                    <td>av. Nacional #976 Col San Jose 
+Mayorazgo</td> 
+                                    <td>5589654125</td> 
+                                    <td>nicovp@yahoo.com</td> 
+                                </tr> <tr> 
+                                    <td>Juan</td> 
+                                    <td>Arrollo</td> 
+                                    <td>Salazar</td> 
+                                    <td>calle 2 de octubre #45 Col Mexico</td> 
+                                    <td>558966325</td> 
+                                    <td>juanito@hotmail.com</td> 
+                                </tr> 
+                            </tbody> 
+                            <tfoot></tfoot> 
+                    </table> 
+                      </section>  
+                    
+           
+        
+            <section>
+                <h2>Tablas</h2>
+                <br>
+                <p> Un ejemplo de estructura de tabla podría incluir filas de encabezados y datos, y un pie de tabla para cálculos finales. Además, atributos como border (para definir el ancho del borde) o colspan (para hacer que una celda se extienda sobre varias columnas) son útiles para el control visual. Aunque estos atributos pueden aplicarse directamente en HTML, es recomendable usar CSS para el estilo y la personalización de las tablas, mejorando así la presentación y funcionalidad de los datos.</p>
+                <br>
+                
+                    <table>
+                     <thead>
+                      <tr>
+                        <th>Universidad</th>
+                        <th>Contacto</th>
+                        <th>Campus</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td>BUAP</td>
+                            <td>22 22 22 22 22</td>
+                            <td>PUEBLA</td>
+                          </tr>
+                          <tr>
+                            <td>UNAM</td>
+                            <td>22 22 22 22 22</td>
+                            <td>CD MÉXICO</td>
+                          </tr>
+                          <tr>
+                            <td>ANAHUAC</td>
+                            <td>22 22 22 22 22</td>
+                            <td>MONTERREY</td>
+                          </tr>
+                          <tr>
+                            <td>UDLAP</td>
+                            <td>22 22 22 22 22</td>
+                            <td>CHOLULA</td>
+                          </tr>
+                          <tr>
+                            <td>UVP</td>
+                            <td>22 22 22 22 22</td>
+                            <td>PUEBLA</td>
+                          </tr>
+                      </tbody>
+                    </table>
+               
+            </section>
+           
+
+           <section>
+                <h2>Tablas con hover</h2>
+                <br>
+                
+                <br>
+                
+                   <table>
+                      <tr>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                      </tr>
+                      <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                      </tr>
+                      <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                      </tr>
+                      <tr>
+                        <td>Ernst Handel</td>
+                        <td>Roland Mendel</td>
+                        <td>Austria</td>
+                      </tr>
+                      <tr>
+                        <td>Island Trading</td>
+                        <td>Helen Bennett</td>
+                        <td>UK</td>
+                      </tr>
+                      <tr>
+                        <td>Laughing Bacchus Winecellars</td>
+                        <td>Yoshi Tannamuri</td>
+                        <td>Canada</td>
+                      </tr>
+                      <tr>
+                        <td>Magazzini Alimentari Riuniti</td>
+                        <td>Giovanni Rovelli</td>
+                        <td>Italy</td>
+                      </tr>
+                    </table>
+               
+            </section>
+           
+
+            <section>
+                <h2>Tablas con overflow</h2>
+                <br>
+                
+                <br>
+                
+                    <table>
+                     <thead>
+                      <tr>
+                        <th>Universidad</th>
+                        <th>Contacto</th>
+                        <th>Campus</th>
+                        <th>Campus</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td>BUAP</td>
+                            <td>22 22 22 22 22</td>
+                            <td>PUEBLA</td>
+                            <td>PUEBLA</td>
+                          </tr>
+                          <tr>
+                            <td>UNAM</td>
+                            <td>22 22 22 22 22</td>
+                            <td>CD MÉXICO</td>
+                            <td>PUEBLA</td>
+                          </tr>
+                          <tr>
+                            <td>ANAHUAC</td>
+                            <td>22 22 22 22 22</td>
+                            <td>MONTERREY</td>
+                            <td>PUEBLA</td>
+                          </tr>
+                          <tr>
+                            <td>UDLAP</td>
+                            <td>22 22 22 22 22</td>
+                            <td>CHOLULA</td>
+                            <td>PUEBLA</td>
+                          </tr>
+                          <tr>
+                            <td>UVP</td>
+                            <td>22 22 22 22 22</td>
+                            <td>PUEBLA</td>
+                            <td>PUEBLA</td>
+                          </tr>
+                      </tbody>
+                    </table>
+               
+            </section>
+           
+             
+           
+        
+        
+
+        </main>
+    
+   
+    <footer>
+            <h5>Elaborado por Marilú Panohaya Hernández</h5>
+    </footer>
+    
+    </body>
+</html><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+    </head>
+    <body></body>
+</html>

@@ -1,0 +1,174 @@
+<html>
+    <head>  
+        <link rel="stylesheet" href="estilos.css">
+        <title>Enlaces en HTML</title>
+    </head>
+
+    <body>
+    
+    <header>
+         <h1>Enlaces en HTML</h1>
+    </header>
+   
+
+     <nav>
+            <div id="navegador">
+                <button> <a href="Index.html"> Inicio </a> </button> 
+                <button> <a href="Listas.html"> Listas </a> </button>
+                <button> <a href="Enlaces.html"> Enlaces </a> </button>
+                <button> <a href="Tablas.html">Tablas </a> </button>
+                <button> <a href="Imagenes.html">Imagenes</a> </button>
+                <button> <a href="Audio.html">Audio</a> </button>
+                <button> <a href="Videos.html">Video</a> </button>
+                <button> <a href="Formulario.html">Formulario </a></button>
+            </div>
+    </nav>
+     <head> 
+        <title>Imagenes</title> 
+        <style> 
+            * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        } 
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color:antiquewhite; 
+        } 
+        header, nav, main, footer { 
+            width: 1200px; 
+            margin: 20px auto; 
+        } 
+        header { 
+            background-color: cadetblue; 
+            color: aliceblue; 
+            padding: 20px; 
+            text-align: center; 
+        } 
+        nav { 
+            width: 100%; 
+            height: 100px; 
+            background-color: #c1ebdb; 
+            margin-bottom: 20px; 
+        } 
+        main { 
+            background-color: #fef7ed; 
+            padding: 30px; 
+            border-radius: 10px; 
+        } 
+        section { 
+            background-color: cadetblue; 
+            color: white; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+            border-radius: 8px; 
+        } 
+        footer { 
+            background-color: cadetblue; 
+            color: aliceblue; 
+            text-align: center; 
+            padding: 10px; 
+            font-size: 14px; 
+            border-radius: 8px;
+               } 
+        ul, ol { 
+            margin-left: 20px; 
+        } 
+        dl dt { 
+            font-weight: bold; 
+        } 
+            } 
+            nav ul{ 
+            } 
+                text-align: center; 
+                padding: 0; 
+            nav ul li{ 
+                width: 250px; 
+                height: 75px; 
+                background-color:#776d3c; 
+                margin: 0 80px;  
+                list-style-type: none; 
+                display: inline-block; 
+                padding: 25px; 
+                text-align: center; 
+                color: white; 
+                justify-content: center; 
+                align-items: center; 
+                border-radius: 5px; 
+                font-weight: bold; 
+            } 
+    </style> 
+   
+    <main>
+   
+         <section class="enlaces">
+            <a name="sec1" class="sec1"></a>
+         <h2> Enlaces externos</h2>
+         <br>
+            <p>
+              Las flores han sido admiradas y utilizadas por los seres humanos desde tiempos ancestrales. Son estructuras reproductivas de las plantas angiospermas y tienen una función vital en la naturaleza: atraer polinizadores como abejas, mariposas y colibríes para asegurar la reproducción de la especie. Sin embargo, más allá de su papel ecológico, las flores han adquirido un profundo significado cultural y estético en diversas civilizaciones.
+                 <a href="https://unsplash.com/es/s/fotos/flores-ex%C3%B3ticas">Flores Exóticas</a>
+                Las flores están compuestas por varias partes esenciales. Los pétalos, de colores y formas llamativas, sirven para atraer polinizadores. Los sépalos protegen la flor antes de su apertura. En el centro, el pistilo contiene los órganos reproductivos femeninos, mientras que los estambres son los órganos masculinos que producen polen. Gracias a este mecanismo, las flores garantizan la producción de semillas y frutos.
+
+                
+            </p>
+        </section>
+        
+        <section class="enlaces">
+            <a name="sec2" class="sec2"></a>
+         <h2> Enlaces internos</h2>
+            <p>
+                Los enlaces internos en HTML se crean utilizando la etiqueta  para conectar diferentes secciones dentro de una misma página web, facilitando la navegación entre los distintos contenidos. Para hacer esto, se utiliza el atributo href junto con un identificador (ID) que se asigna a un elemento de destino dentro de la página. Por ejemplo, al colocar href="#seccion1", el enlace llevará al usuario directamente a la parte del documento donde el elemento tiene el atributo id="seccion1". Esta técnica es útil para crear menús de navegación o tablas de contenido que permitan a los usuarios desplazarse de manera eficiente por el contenido largo o dividido en secciones específicas.
+                 </p>
+                <br>
+                <div id="divmg">
+                <img src= "flores.jpg">
+                <br>
+                <br>
+                <br>
+                <a href= "FLOR.pdf" download > Descargar archivo </a>
+                </div>
+
+           
+
+        </section>
+        
+            
+        <section class="enlaces">
+            <a name="sec3" class="sec3"></a>
+         <h2> Enlaces de página</h2>
+            <p>
+               Los enlaces de archivo en HTML se crean mediante la etiqueta y permiten a los usuarios descargar archivos directamente desde una página web. Al utilizar el atributo href para especificar la ubicación del archivo, como documentos PDF, imágenes o archivos de audio, se facilita el acceso a contenido adicional que puede ser relevante para los visitantes. Para mejorar la experiencia del usuario, se puede incluir el atributo download, que sugiere al navegador que el archivo debe descargarse en lugar de abrirse, permitiendo así que los usuarios guarden el archivo en su dispositivo con un solo clic. Esta funcionalidad es especialmente útil para proporcionar recursos, informes o materiales complementarios que los usuarios pueden necesitar sin tener que navegar fuera de la página web.
+               
+            </p>
+        </section>
+           
+             
+           
+        
+        
+
+        </main>
+    
+         <nav >
+            <ul id="menu_interno">
+                <li><a href="#sec1">Enlaces externos</a></li>
+                <li><a href="#sec2">Enlaces internos</a></li>
+                <li><a href="#sec3">Enlaces archivo</a></li>
+                </ul>
+            </nav>
+
+
+    <footer>
+            <h5>Elaborado por Marilú Panohaya Hernández</h5>
+    </footer>
+    
+    </body>
+</html><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+    </head>
+    <body></body>
+</html>
